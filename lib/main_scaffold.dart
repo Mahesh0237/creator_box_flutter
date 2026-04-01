@@ -28,7 +28,7 @@ class _MainScaffoldState extends State<MainScaffold> {
       backgroundColor: const Color(0xFFFBFBFB),
       body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: Container(
-        height: 64,
+        height: 80,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [

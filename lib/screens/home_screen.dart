@@ -18,8 +18,8 @@ class HomeScreen extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                width: 48,
-                height: 48,
+                width: 36,
+                height: 36,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
@@ -28,6 +28,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(width: 12),
+              Image.asset('assets/Creator-Box-logo.png', height: 40),
               const Expanded(child: SizedBox()),
               IconButton(
                 icon: const Icon(
@@ -50,6 +52,33 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 24),
+            // Welcome Back Greeting
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'WELCOME BACK',
+                    style: AppTypography.interBold.copyWith(
+                      color: AppColors.primaryRed,
+                      fontSize: 11,
+                      letterSpacing: 2,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Hi, Mahesh \u{1F44B}',
+                    style: AppTypography.beVietnamProExtraBold.copyWith(
+                      color: AppColors.textMain,
+                      fontSize: 28,
+                      letterSpacing: -0.5,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 32),
             // Campaigns Section
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -57,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'CAMPAIGNS FOR YOU',
+                    'Latest Campaigns',
                     style: AppTypography.labelLarge.copyWith(
                       color: AppColors.textMain,
                       fontWeight: FontWeight.w900,
@@ -104,7 +133,7 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(
-                'COLLECTIONS BY BRANDS',
+                'Top Brands This Week',
                 style: AppTypography.labelLarge.copyWith(
                   color: AppColors.textMain,
                   fontWeight: FontWeight.w900,
@@ -121,7 +150,7 @@ class HomeScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 mainAxisSpacing: 16,
                 crossAxisSpacing: 16,
-                childAspectRatio: 156 / 150,
+                childAspectRatio: 156 / 170,
                 children: const [
                   BrandCard(
                     name: 'Velo Sport',
@@ -152,7 +181,7 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(
-                'TRENDING IN YOUR NICHE',
+                'Trending Content Insights',
                 style: AppTypography.labelLarge.copyWith(
                   color: AppColors.textMain,
                   fontWeight: FontWeight.w900,

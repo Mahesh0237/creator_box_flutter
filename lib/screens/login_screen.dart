@@ -65,6 +65,7 @@ class LoginScreen extends StatelessWidget {
                       label: 'Password',
                       hintText: '••••••••',
                       obscureText: true,
+                      showPasswordToggle: true,
                       suffix: TextButton(
                         onPressed: () {},
                         child: Text(
