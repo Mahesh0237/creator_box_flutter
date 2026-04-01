@@ -16,7 +16,7 @@ class EditProfileScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 64), // Space for sticky header
+                SizedBox(height: MediaQuery.of(context).padding.top + 64), // Space for sticky header
                 
                 // Cinematic Hero Section
                 Container(
@@ -263,7 +263,7 @@ class EditProfileScreen extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              height: 64,
+              padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.8),
                 border: Border(bottom: BorderSide(color: Colors.white.withOpacity(0.3))),
@@ -271,15 +271,20 @@ class EditProfileScreen extends StatelessWidget {
               child: ClipRRect(
                 child: BackdropFilter(
                   filter: ColorFilter.mode(Colors.white.withOpacity(0.8), BlendMode.srcOver),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(Icons.menu, color: Color(0xFF1A1C1C), size: 16),
-                            const SizedBox(width: 16),
+                  child: SizedBox(
+                    height: 64,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              GestureDetector(
+                                onTap: () => Navigator.pop(context),
+                                child: const Icon(Icons.arrow_back, color: Color(0xFF1A1C1C), size: 24),
+                              ),
+                              const SizedBox(width: 16),
                             Text(
                               'CREATOR BOX',
                               style: AppTypography.interBold.copyWith(
@@ -313,6 +318,7 @@ class EditProfileScreen extends StatelessWidget {
               ),
             ),
           ),
+        ),
         ],
       ),
     );
