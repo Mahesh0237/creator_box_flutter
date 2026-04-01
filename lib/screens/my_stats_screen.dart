@@ -14,7 +14,7 @@ class MyStatsScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 70), // Header space
+                SizedBox(height: 70 + MediaQuery.of(context).padding.top), // Header space
 
                 // Section 1: Header & Platform Toggle
                 const Padding(
@@ -67,29 +67,37 @@ class _StickyTopAppBar extends StatelessWidget {
     return Positioned(
       top: 0,
       left: 0,
-      width: 390,
-      height: 64,
+      right: 0,
+      height: 64 + MediaQuery.of(context).padding.top,
       child: Container(
+        padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.4),
-          border: Border(bottom: BorderSide(color: Colors.white.withOpacity(0.3))),
+          color: Colors.white.withValues(alpha: 0.4),
+          border: Border(bottom: BorderSide(color: Colors.white.withValues(alpha: 0.3))),
         ),
         child: ClipRRect(
           child: BackdropFilter(
-            filter: ColorFilter.mode(Colors.white.withOpacity(0.4), BlendMode.srcOver),
+            filter: ColorFilter.mode(Colors.white.withValues(alpha: 0.4), BlendMode.srcOver),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(
-                    icon: const Icon(Icons.arrow_back, size: 16, color: Color(0xFF1A1C1C)),
-                    onPressed: () => Navigator.pop(context),
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: const Icon(Icons.arrow_back, size: 24, color: Color(0xFF1A1C1C)),
                   ),
                   Row(
                     children: [
-                      IconButton(icon: const Icon(Icons.notifications_none, size: 24, color: Color(0xFF1A1C1C)), onPressed: () {}),
-                      IconButton(icon: const Icon(Icons.search, size: 24, color: Color(0xFF1A1C1C)), onPressed: () {}),
+                      GestureDetector(
+                        onTap: () {},
+                        child: const Icon(Icons.notifications_none, size: 24, color: Color(0xFF1A1C1C)),
+                      ),
+                      const SizedBox(width: 16),
+                      GestureDetector(
+                        onTap: () {},
+                        child: const Icon(Icons.search, size: 24, color: Color(0xFF1A1C1C)),
+                      ),
                     ],
                   ),
                 ],
