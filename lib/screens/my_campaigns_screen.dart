@@ -14,7 +14,7 @@ class MyCampaignsScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 64), // Header space
+                SizedBox(height: 64 + MediaQuery.of(context).padding.top), // Header space
 
                 // Spotlight Deal Section
                 const _SpotlightDealSection(),
@@ -64,14 +64,15 @@ class _StickyHeader extends StatelessWidget {
     return Positioned(
       top: 0,
       left: 0,
-      width: 390,
-      height: 64,
+      right: 0,
+      height: 64 + MediaQuery.of(context).padding.top,
       child: Container(
+        padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.8),
+          color: Colors.white.withValues(alpha: 0.8),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF1A1C1C).withOpacity(0.04),
+              color: const Color(0xFF1A1C1C).withValues(alpha: 0.04),
               blurRadius: 40,
               offset: const Offset(0, 12),
             ),
@@ -79,7 +80,7 @@ class _StickyHeader extends StatelessWidget {
         ),
         child: ClipRRect(
           child: BackdropFilter(
-            filter: ColorFilter.mode(Colors.white.withOpacity(0.8), BlendMode.srcOver),
+            filter: ColorFilter.mode(Colors.white.withValues(alpha: 0.8), BlendMode.srcOver),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Row(
@@ -87,7 +88,10 @@ class _StickyHeader extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.menu, size: 16, color: Color(0xFF1A1C1C)),
+                      GestureDetector(
+                        onTap: () => Navigator.pop(context),
+                        child: const Icon(Icons.arrow_back, size: 24, color: Color(0xFF1A1C1C)),
+                      ),
                       const SizedBox(width: 16),
                       Text(
                         'CREATOR BOX',
@@ -104,7 +108,7 @@ class _StickyHeader extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: const Color(0xFFBC0100).withOpacity(0.1), width: 2),
+                      border: Border.all(color: const Color(0xFFBC0100).withValues(alpha: 0.1), width: 2),
                       image: const DecorationImage(
                         image: AssetImage('assets/fd4162f032b84a3830c4a4221db338640c777fc5.png'), // user_avatar_header
                         fit: BoxFit.cover,
