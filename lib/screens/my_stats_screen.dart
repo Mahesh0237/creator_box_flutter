@@ -81,24 +81,41 @@ class _StickyTopAppBar extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  GestureDetector(
-                    onTap: () => Navigator.pop(context),
-                    child: const Icon(Icons.arrow_back, size: 24, color: Color(0xFF1A1C1C)),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: GestureDetector(
+                        onTap: () => Navigator.pop(context),
+                        child: const Icon(Icons.arrow_back, size: 24, color: Color(0xFF1A1C1C)),
+                      ),
+                    ),
                   ),
-                  Row(
-                    children: [
-                      GestureDetector(
-                        onTap: () {},
-                        child: const Icon(Icons.notifications_none, size: 24, color: Color(0xFF1A1C1C)),
+                  Text(
+                    'My Stats',
+                    style: AppTypography.interBold.copyWith(
+                      color: const Color(0xFF1A1C1C),
+                      fontSize: 16,
+                    ),
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          GestureDetector(
+                            onTap: () {},
+                            child: const Icon(Icons.notifications_none, size: 24, color: Color(0xFF1A1C1C)),
+                          ),
+                          const SizedBox(width: 16),
+                          GestureDetector(
+                            onTap: () {},
+                            child: const Icon(Icons.search, size: 24, color: Color(0xFF1A1C1C)),
+                          ),
+                        ],
                       ),
-                      const SizedBox(width: 16),
-                      GestureDetector(
-                        onTap: () {},
-                        child: const Icon(Icons.search, size: 24, color: Color(0xFF1A1C1C)),
-                      ),
-                    ],
+                    ),
                   ),
                 ],
               ),

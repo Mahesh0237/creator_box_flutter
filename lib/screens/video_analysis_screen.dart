@@ -167,8 +167,8 @@ class VideoAnalysisScreen extends StatelessWidget {
                     flex: 1,
                     child: Container(
                       height: 6,
-                      color: AppColors.primaryRed,
                       decoration: const BoxDecoration(
+                        color: AppColors.primaryRed,
                         boxShadow: [
                           BoxShadow(color: AppColors.primaryRed, blurRadius: 15),
                         ],
