@@ -9,6 +9,70 @@ class EditProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.only(
+          left: 24,
+          right: 24,
+          top: 16,
+          bottom: MediaQuery.of(context).padding.bottom == 0 ? 16 : MediaQuery.of(context).padding.bottom,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.05),
+              blurRadius: 10,
+              offset: const Offset(0, -4),
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Expanded(
+              child: GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: Container(
+                  height: 48,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFEBEBEB),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    'DISCARD',
+                    style: AppTypography.interBold.copyWith(
+                      color: const Color(0xFF1A1C1C),
+                      fontSize: 12,
+                      letterSpacing: 1,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 48,
+                  decoration: const BoxDecoration(
+                    color: AppColors.primaryRed,
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    'SAVE CHANGES',
+                    style: AppTypography.interBold.copyWith(
+                      color: Colors.white,
+                      fontSize: 12,
+                      letterSpacing: 1,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Stack(
         children: [
           // Scrollable Content
@@ -202,54 +266,96 @@ class EditProfileScreen extends StatelessWidget {
 
                       const SizedBox(height: 32),
 
-                      // Bento Grid: Stats
-                      const Text(
-                        'PERFORMANCE NARRATIVE',
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w700,
-                          fontSize: 12,
-                          color: Color(0xFF603E39),
-                          letterSpacing: 2.4,
+                      // Core Expertise Section
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(24),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.02),
+                              blurRadius: 10,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'CORE EXPERTISE',
+                              style: AppTypography.beVietnamProBlack.copyWith(
+                                color: const Color(0xFF1A1C1C),
+                                fontSize: 18,
+                                fontStyle: FontStyle.italic,
+                                letterSpacing: -0.5,
+                              ),
+                            ),
+                            const SizedBox(height: 24),
+                            Wrap(
+                              spacing: 8,
+                              runSpacing: 12,
+                              children: [
+                                const _ExpertiseChip(label: 'VISUAL ART', isSelected: true),
+                                const _ExpertiseChip(label: 'CINEMATOGRAPHY', isSelected: false),
+                                const _ExpertiseChip(label: 'CREATIVE DIR.', isSelected: false),
+                                const _ExpertiseChip(label: 'STORYTELLING', isSelected: false),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(color: AppColors.primaryRed.withValues(alpha: 0.15)),
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Icon(Icons.add, color: AppColors.primaryRed, size: 14),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        'ADD NEW',
+                                        style: AppTypography.interBold.copyWith(
+                                          color: AppColors.primaryRed,
+                                          fontSize: 10,
+                                          letterSpacing: 1,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 32),
+                            Text(
+                              'Select up to 5 categories that define your visual brand voice.',
+                              style: AppTypography.interMedium.copyWith(
+                                color: const Color(0xFF603E39),
+                                fontSize: 11,
+                                height: 1.4,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(height: 16),
-                      const _BentoGridStats(),
-
-                      const SizedBox(height: 48),
-
-                      // Section: Social Channels
-                      const Text(
-                        'CONNECTED CHANNELS',
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w700,
-                          fontSize: 12,
-                          color: Color(0xFF603E39),
-                          letterSpacing: 2.4,
-                        ),
+                      
+                      const SizedBox(height: 24),
+                      
+                      const _SocialToggleCard(
+                        icon: Icons.video_library_outlined,
+                        title: 'YOUTUBE',
+                        subtitle: 'VIDEO PORTFOLIO',
+                        isActive: true,
                       ),
-                      const SizedBox(height: 16),
-                      const _SocialChannelTile(
-                        platform: 'YouTube',
-                        handle: '@julian_cine',
-                        stats: '224K SUBS',
-                        icon: Icons.play_circle_fill,
-                      ),
-                      const _SocialChannelTile(
-                        platform: 'Instagram',
-                        handle: '@j_martinez',
-                        stats: '84K FOLLOWERS',
-                        icon: Icons.camera_alt,
-                      ),
-                      const _SocialChannelTile(
-                        platform: 'TikTok',
-                        handle: '@julian.raw',
-                        stats: '412K FOLLOWERS',
-                        icon: Icons.music_note,
+                      const _SocialToggleCard(
+                        icon: Icons.camera_alt_outlined,
+                        title: 'INSTAGRAM',
+                        subtitle: 'VISUAL FEED',
+                        isActive: true,
                       ),
 
-                      const SizedBox(height: 120), // Bottom padding
+                      const SizedBox(height: 80), // Bottom padding
                     ],
                   ),
                 ),
@@ -325,163 +431,98 @@ class EditProfileScreen extends StatelessWidget {
   }
 }
 
-class _BentoGridStats extends StatelessWidget {
-  const _BentoGridStats();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: _StatTile(
-                label: 'FOLLOWERS',
-                value: '1.2M',
-                trend: '+12.5%',
-                color: const Color(0xFFF3F3F3),
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: _StatTile(
-                label: 'ENGAGEMENT',
-                value: '4.2%',
-                trend: '+8.2%',
-                color: const Color(0xFFF3F3F3),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 16),
-        _StatTile(
-          label: 'TOTAL REACH',
-          value: '15.4M',
-          trend: '+15.8%',
-          color: const Color(0xFFF3F3F3),
-          isFullWidth: true,
-        ),
-      ],
-    );
-  }
-}
-
-class _StatTile extends StatelessWidget {
+class _ExpertiseChip extends StatelessWidget {
   final String label;
-  final String value;
-  final String trend;
-  final Color color;
-  final bool isFullWidth;
-
-  const _StatTile({
-    required this.label,
-    required this.value,
-    required this.trend,
-    required this.color,
-    this.isFullWidth = false,
-  });
+  final bool isSelected;
+  const _ExpertiseChip({required this.label, this.isSelected = false});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(4),
+        color: isSelected ? AppColors.primaryRed : const Color(0xFFEBEBEB),
+        borderRadius: BorderRadius.circular(2),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                label,
-                style: AppTypography.interBold.copyWith(
-                  color: const Color(0xFF603E39),
-                  fontSize: 10,
-                  letterSpacing: 1,
-                ),
-              ),
-              Text(
-                trend,
-                style: AppTypography.interBold.copyWith(
-                  color: const Color(0xFF16A34A),
-                  fontSize: 10,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          Text(
-            value,
-            style: AppTypography.headlineSmall.copyWith(
-              color: const Color(0xFF1A1C1C),
-              fontWeight: FontWeight.w900,
-              fontSize: 24,
-            ),
-          ),
-        ],
+      child: Text(
+        label,
+        style: AppTypography.interBold.copyWith(
+          color: isSelected ? Colors.white : const Color(0xFF1A1C1C),
+          fontSize: 10,
+          letterSpacing: 1,
+        ),
       ),
     );
   }
 }
 
-class _SocialChannelTile extends StatelessWidget {
-  final String platform;
-  final String handle;
-  final String stats;
+class _SocialToggleCard extends StatelessWidget {
   final IconData icon;
+  final String title;
+  final String subtitle;
+  final bool isActive;
 
-  const _SocialChannelTile({
-    required this.platform,
-    required this.handle,
-    required this.stats,
+  const _SocialToggleCard({
     required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.isActive,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      padding: const EdgeInsets.all(16),
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(4),
-        border: Border.all(color: const Color(0xFFF3F3F3)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.02),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Icon(icon, color: const Color(0xFF1A1C1C), size: 24),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  platform,
-                  style: AppTypography.interBold.copyWith(
-                    color: const Color(0xFF1A1C1C),
-                    fontSize: 14,
-                  ),
-                ),
-                Text(
-                  handle,
-                  style: AppTypography.interMedium.copyWith(
-                    color: const Color(0xFF603E39),
-                    fontSize: 12,
-                  ),
-                ),
-              ],
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: const Color(0xFFFFF4F4),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Icon(icon, color: AppColors.primaryRed, size: 24),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            title,
+            style: AppTypography.beVietnamProBlack.copyWith(
+              color: const Color(0xFF1A1C1C),
+              fontSize: 18,
+              letterSpacing: -0.5,
             ),
           ),
+          const SizedBox(height: 4),
           Text(
-            stats,
+            subtitle,
             style: AppTypography.interBold.copyWith(
-              color: const Color(0xFFBC0100),
+              color: const Color(0xFF8A7470),
               fontSize: 10,
-              letterSpacing: 1,
+              letterSpacing: 1.5,
             ),
+          ),
+          const SizedBox(height: 24),
+          Switch(
+            value: isActive,
+            onChanged: (val) {},
+            activeColor: Colors.white,
+            activeTrackColor: AppColors.primaryRed,
+            inactiveThumbColor: Colors.white,
+            inactiveTrackColor: const Color(0xFFE8E8E8),
           ),
         ],
       ),
