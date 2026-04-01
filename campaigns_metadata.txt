@@ -1,0 +1,754 @@
+import { imgContainer, imgContainer1, imgIcon, imgContainer2, imgContainer3, imgContainer4, imgContainer5, imgIcon1, imgContainer6, imgIcon2, imgIcon3, imgIcon4, imgButton, imgContainer7, imgContainer8, imgContainer9, imgContainer10, imgContainer11 } from "./svg-w5rzz";
+const imgAb6AXuAlNaNqHjLpJldb8Tc8B7D54GnJab6IcTAceslelv6Qijud7Ko53SbEnZp37WBj7XA4N9MfRe8E28FCdObEw1662Q9NoGqRhBcHiiPbRz2O8Zk94WTNpHtEerDgVm0A75FMbK8COEzFbZuBaaPfWyMnEuGxXjxnwQ1OTYmdZEdco2Xip47ZDzrF57RzOEiAZjzZnKCuFf4Fe6T44UqAqggUXbDBe7G39Zms3BviW5SZvNnmWdf3LAwkz0JvjqkUJLqyuzyw = "d:\Quadrant_Projects\creator_box_mobile\assets/baf82d5289393418bd53626b9019712da1a40957.png";
+const imgAb6AXuCYoQDqIfvPhddSiTqFJjilVuITwBR6K4VdgfJNxZtAufD4XyRyvJjB6MeVLaLKpcPfabe2QnkRKffbAXanjsm3Fne0VSoBnIt5PeclOvhVi47XvjYghs1MWs05DOnS7Rq1Ps2JBp88DiOtyACuxk3Ubu6HYjU4QkYd4Xznz8U07R3EpK5XPJwfUrrSig5XlbE0HxXmgT2SgwcKwnHbRk104HbHEh4AaCD49QOvOkZhKzSzRdjHIxHgBSskNHbR2Ye = "d:\Quadrant_Projects\creator_box_mobile\assets/db19dc8ae5ca86896be68887d4e002a9a17992d6.png";
+const imgAb6AXuCfoeBI8BgUw0BmkBIm6UxG5WJdLjd5Std5A7AIeLpS96PCljQ1Zc5EvLKlTeiKneStsXsuip9QOtD8AODwBMz7B6Z84D9EeZyYgLcwoMvIi1FUqnJDfeg4X3BhA1YkC8PcCkL6Ca6O22V4FMjTrMcg88OFp9DWgLegzgXjyOxoNpO3LtFxj1BPuEezAzvIkAqbGgVyBn15GZXaoZDqBdxvmpjwJviZRw6BJhQwtAn1FjZGlr5OAolewQhfF7KnCiHdOlqe = "d:\Quadrant_Projects\creator_box_mobile\assets/5b6d8fc7427ff8d2d1390c27f92f55218ef2fa54.png";
+const imgAb6AXuBj0VsOExUUajYVu79EuXkXsu75Kr7Tjdq85CUwePbVQmZo687VXkY2DQFdYud2F6VSn7RwrkgRk6DyEqFEo2G4Oh1Bt6LoYIkBSnuK9RcDy2T6Y0QOsHodcLrM2Mv65Fb1Ux99B973JHKe9E1Osw3BuK2OrkkaI0BustEDutDqvxziQpM5Q9XzXuXyGqLg3BGDeg7IliGDrprFgsqq8GlEV0UrDg32KkmN9MlwtlGkmMKvsLXs2FwCh8OldRahFbxzwGs = "d:\Quadrant_Projects\creator_box_mobile\assets/aae415d060834544a10b4544504156963709b417.png";
+const imgAb6AXuDUf18DCwBtLzshGzXIsEKtnqUl5S8RzV6TRvQsPQvGqwxjdgr00CjokZylFm1UXz0Hy4EBpQ9IbixcSXpUBfGSjvNxW0YLyvRdqBynarlcVmXBwP5GfMpSlbbrUUsF8Z1GZgZHo13E8TpHpqFVlJr5DQuYj3Br7NiA0ZHh6CZz7Vi9RoR9UYuJz1JuuU65I8YjdGrlRx9GusX8I7GBxyCtAYd2ETFtt4XbBsz86RmIpiAsZwSzIMebnVaNVq3HeE4 = "d:\Quadrant_Projects\creator_box_mobile\assets/7a54be312e249d68c62cfd523125744c3a4b525b.png";
+const imgAb6AXuCLrvXmdUvWqVrqSXqfe72AntZe9YupJpfMKXiwmhz78SBs70JiBzIns5WfkfNeqnh7IYkzkIoCtzz4Lqcrn1Lx46VVl4GKv7YtVnkyl9SHiMiaOiyweosUv2MLqdy3P6F5GxqTg1Stnp2TrnyS9WYvtpyDf4SCfVxnheUwZsufXu8V2JipMdRy2Dp8BdtWwPniG9JxXpDdk2JpY2MZCkpJtzlkRoDcMskFuk7Trk1VkYwjqwBPlka7Qr66FbrAryYqpHbJoE = "d:\Quadrant_Projects\creator_box_mobile\assets/88908a8d8d0687a42cbf189bf89ccc63082a0097.png";
+
+export default function CampaignsStructuredDashboard() {
+  return (
+    <div className="bg-[#f9f9f9] content-stretch flex flex-col items-start pb-[96px] relative size-full" data-name="Campaigns: Structured Dashboard" data-node-id="134:620">
+      <div className="content-stretch flex flex-col gap-[32px] items-start max-w-[1280px] pt-[96px] px-[24px] relative shrink-0 w-full" data-name="Main" data-node-id="134:621">
+        <div className="content-stretch flex flex-col items-start justify-between relative shrink-0 w-full" data-name="Section 1: Header & Hero Title" data-node-id="134:622">
+          <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:623">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 2" data-node-id="134:624">
+              <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[36px] tracking-[-0.9px] w-full" data-node-id="134:625">
+                <p className="leading-[40px] mb-0">Campaigns</p>
+                <p className="leading-[40px]">Marketplace</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:626">
+              <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[16px] w-full" data-node-id="134:627">
+                <p className="leading-[24px] mb-0">Discover 124 opportunities matched to your</p>
+                <p className="leading-[24px]">audience metrics.</p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:628">
+            <div className="bg-[#e8e8e8] content-stretch flex gap-[25.55px] items-center min-h-[48px] pl-[24px] pr-[41.56px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:629">
+              <div className="relative shrink-0 size-[15px]" data-name="Container" data-node-id="134:630">
+                <img alt="" className="absolute block max-w-none size-full" src={imgContainer} />
+              </div>
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[14px] text-center tracking-[0.35px] w-[67.08px]" data-node-id="134:632">
+                <p className="leading-[20px] mb-0">Saved</p>
+                <p className="leading-[20px]">Searches</p>
+              </div>
+            </div>
+            <div className="bg-[#bc0100] content-stretch flex gap-[22.03px] items-center min-h-[48px] pl-[24px] pr-[38.03px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:633">
+              <div className="absolute bg-[rgba(255,255,255,0)] inset-[0_0.67px_0_0] rounded-[4px] shadow-[0px_10px_15px_-3px_rgba(188,1,0,0.2),0px_4px_6px_-4px_rgba(188,1,0,0.2)]" data-name="Button:shadow" data-node-id="134:634" />
+              <div className="relative shrink-0 size-[11.667px]" data-name="Container" data-node-id="134:635">
+                <img alt="" className="absolute block max-w-none size-full" src={imgContainer1} />
+              </div>
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[40px] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-center text-white tracking-[0.35px] w-[47.75px]" data-node-id="134:637">
+                <p className="leading-[20px] mb-0">Create</p>
+                <p className="leading-[20px]">Brief</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Section 2: Search & Platform Toggles" data-node-id="134:638">
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Search Bar" data-node-id="134:639">
+            <div className="bg-white content-stretch flex h-[56px] items-start justify-center overflow-clip pl-[48px] pr-[16px] py-[18px] relative shrink-0 w-full" data-name="Input" data-node-id="134:640">
+              <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px min-w-px overflow-clip relative" data-name="Container" data-node-id="134:641">
+                <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#6b7280] text-[16px] w-full" data-node-id="134:642">
+                  <p className="leading-[normal]">Search brands, products, or niches...</p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute bottom-[28.57%] content-stretch flex flex-col items-start left-[16px] top-[28.57%]" data-name="Container" data-node-id="134:643">
+              <div className="relative shrink-0 size-[18px]" data-name="Icon" data-node-id="134:644">
+                <img alt="" className="absolute block max-w-none size-full" src={imgIcon} />
+              </div>
+            </div>
+          </div>
+          <div className="h-[120px] relative shrink-0 w-full" data-name="Platform Filters" data-node-id="134:645">
+            <div className="-translate-y-1/2 absolute bg-[#bc0100] content-stretch flex h-[56px] items-center justify-center left-0 min-w-[120px] px-[24px] rounded-[4px] top-[calc(50%-32px)]" data-name="Button" data-node-id="134:646">
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[99.78px]" data-node-id="134:647">
+                <p className="leading-[24px]">All Platforms</p>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 absolute bg-white border border-[rgba(149,109,103,0.1)] border-solid content-stretch flex gap-[8px] h-[56px] items-center justify-center left-[155.78px] min-w-[120px] px-[25px] py-px rounded-[4px] top-[calc(50%-32px)]" data-name="Button" data-node-id="134:648">
+              <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Container" data-node-id="134:649">
+                <img alt="" className="absolute block max-w-none size-full" src={imgContainer2} />
+              </div>
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[16px] text-center w-[67.98px]" data-node-id="134:651">
+                <p className="leading-[24px]">YouTube</p>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 absolute bg-white border border-[rgba(149,109,103,0.1)] border-solid content-stretch flex gap-[8px] h-[56px] items-center justify-center left-0 min-w-[120px] px-[25px] py-px rounded-[4px] top-[calc(50%+32px)]" data-name="Button" data-node-id="134:652">
+              <div className="h-[18px] relative shrink-0 w-[20px]" data-name="Container" data-node-id="134:653">
+                <img alt="" className="absolute block max-w-none size-full" src={imgContainer3} />
+              </div>
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[16px] text-center w-[78.94px]" data-node-id="134:655">
+                <p className="leading-[24px]">Instagram</p>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 absolute bg-white border border-[rgba(149,109,103,0.1)] border-solid content-stretch flex gap-[8px] h-[56px] items-center justify-center left-[168.95px] min-w-[120px] px-[25px] py-px rounded-[4px] top-[calc(50%+32px)]" data-name="Button" data-node-id="134:656">
+              <div className="h-[18px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:657">
+                <img alt="" className="absolute block max-w-none size-full" src={imgContainer4} />
+              </div>
+              <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[16px] text-center w-[51.92px]" data-node-id="134:659">
+                <p className="leading-[24px]">TikTok</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(1,minmax(0,1fr))] grid-rows-[______598.50px_598.50px_568.50px_568.50px_598.50px_568.50px] pb-[48px] relative shrink-0 w-full" data-name="Section 3: Main Campaign Feed" data-node-id="134:660">
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-1 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 1" data-node-id="134:661">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:662">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuALNaNQHjLpJldb8TC8b7D54gnJab6IcT_aceslelv6qijud7ko53SBEnZP37wBj7xA4N9MFRe8E28FCdObEw1662Q9NoGq-rh-bcHiiPbRz2o8ZK94wTNpHTEerDgVM0a75fMbK8cOEzFbZUBaaPfWyMnEuGXXjxnwQ1o-TYmdZEdco2xip47ZDzrF57RzOEiA_ZjzZnKCuFF4FE6T44UqAqggUXbDBe7g39Zms3bvi-W5sZvNNMWdf3lAWKZ0jvjqk-uJLqyuzyw" data-node-id="134:663">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuAlNaNqHjLpJldb8Tc8B7D54GnJab6IcTAceslelv6Qijud7Ko53SbEnZp37WBj7XA4N9MfRe8E28FCdObEw1662Q9NoGqRhBcHiiPbRz2O8Zk94WTNpHtEerDgVm0A75FMbK8COEzFbZuBaaPfWyMnEuGxXjxnwQ1OTYmdZEdco2Xip47ZDzrF57RzOEiAZjzZnKCuFf4Fe6T44UqAqggUXbDBe7G39Zms3BviW5SZvNnmWdf3LAwkz0JvjqkUJLqyuzyw} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:664">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:665">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:667">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[78.86px]" data-node-id="134:668">
+                    <p className="leading-[20px]">98% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:669">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:670">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:671">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[107.77px]" data-node-id="134:672">
+                    <p className="leading-[15px]">{`Tech & Lifestyle`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:673">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:674">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:675">
+                    <p className="leading-[30px] mb-0">Razer: Stealth Series</p>
+                    <p className="leading-[30px]">Launch</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:676">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:677">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[84.64px]" data-node-id="134:679">
+                    <p className="leading-[20px]">Razer Global</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:680">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:681">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:682">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:683">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:684">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:685">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:686">
+                          <p className="leading-[28px] mb-0">$5,000 -</p>
+                          <p className="leading-[28px]">$8,500</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:687">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:688">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:689">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:690">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:691">
+                          <p className="leading-[28px]">Oct 24, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:692">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:693">
+                  <div className="content-stretch flex gap-[8px] h-[18px] items-start relative shrink-0" data-name="Container" data-node-id="134:694">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:695">
+                      <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:696">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon2} />
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:697">
+                      <div className="h-[18px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:698">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon3} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:699">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:700">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-2 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 2" data-node-id="134:701">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:702">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuCYoQDq_IfvPHDDSiTqFJjilVuITwB_r6K4VdgfJNxZTAufD4XYRyv-JjB6-meVLaLKpcPFABE2qnkRKffbAXanjsm3fne0vSOBnIT5PeclOvhVi47XVJYghs_1MWs05dOnS7rq1PS2jBP88diOty_aCuxk3ubu6hYjU4QKYd4Xznz8u07R3EpK5x-PJwf_URRSig5xlbE0hxXmgT2sgwcKWNHbRK104HbHEh4AaC-d49QOvOKZhKZSzRdjHIxHG_b_SskN-hbR2YE" data-node-id="134:703">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuCYoQDqIfvPhddSiTqFJjilVuITwBR6K4VdgfJNxZtAufD4XyRyvJjB6MeVLaLKpcPfabe2QnkRKffbAXanjsm3Fne0VSoBnIt5PeclOvhVi47XvjYghs1MWs05DOnS7Rq1Ps2JBp88DiOtyACuxk3Ubu6HYjU4QkYd4Xznz8U07R3EpK5XPJwfUrrSig5XlbE0HxXmgT2SgwcKwnHbRk104HbHEh4AaCD49QOvOkZhKzSzRdjHIxHgBSskNHbR2Ye} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:704">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:705">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:707">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[78.56px]" data-node-id="134:708">
+                    <p className="leading-[20px]">92% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:709">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:710">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:711">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[110.08px]" data-node-id="134:712">
+                    <p className="leading-[15px]">{`Sports & Fitness`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:713">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:714">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:715">
+                    <p className="leading-[30px] mb-0">Nike: HyperSpeed</p>
+                    <p className="leading-[30px]">Campaign</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:716">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:717">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[80.94px]" data-node-id="134:719">
+                    <p className="leading-[20px]">Nike Europe</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:720">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:721">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:722">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:723">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:724">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:725">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:726">
+                          <p className="leading-[28px] mb-0">$3,200 -</p>
+                          <p className="leading-[28px]">$5,000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:727">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:728">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:729">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:730">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:731">
+                          <p className="leading-[28px]">Nov 12, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:732">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:733">
+                  <div className="content-stretch flex gap-[8px] h-[18px] items-start relative shrink-0" data-name="Container" data-node-id="134:734">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:735">
+                      <div className="h-[18px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:736">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon3} />
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:737">
+                      <div className="h-[18px] relative shrink-0 w-[12px]" data-name="Icon" data-node-id="134:738">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon4} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:739">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:740">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-3 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 3" data-node-id="134:741">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:742">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuCfoeB_I8bgUw0bmkBIm_6uxG5W_jdLJD5std5a7aIeLpS96pCljQ1ZC5EvLKlTEIKneSTSXsuip9QOtD8aODwBMz7b6Z84d9eeZYYgLcwoMVIi1FUqnJDfeg4x3bhA1ykC8PcCkL6Ca6O22V4_fMjTr-MCG88oFp9d-WgLEGZGXjyOXONpO3ltFxj1bPUEezAZVIkAQBGgVyBn15gZXaoZDqBDXVMPJWJviZRw6BJhQwtAn1FjZGlr5O_aolewQhfF7knCIHdOLQE" data-node-id="134:743">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuCfoeBI8BgUw0BmkBIm6UxG5WJdLjd5Std5A7AIeLpS96PCljQ1Zc5EvLKlTeiKneStsXsuip9QOtD8AODwBMz7B6Z84D9EeZyYgLcwoMvIi1FUqnJDfeg4X3BhA1YkC8PcCkL6Ca6O22V4FMjTrMcg88OFp9DWgLegzgXjyOxoNpO3LtFxj1BPuEezAzvIkAqbGgVyBn15GZXaoZDqBdxvmpjwJviZRw6BJhQwtAn1FjZGlr5OAolewQhfF7KnCiHdOlqe} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:744">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:745">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:747">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[78.48px]" data-node-id="134:748">
+                    <p className="leading-[20px]">85% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:749">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:750">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:751">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[92.81px]" data-node-id="134:752">
+                    <p className="leading-[15px]">{`Home & Design`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:753">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:754">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:755">
+                    <p className="leading-[30px]">Dyson: Pure Air Series</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:756">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:757">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[72.16px]" data-node-id="134:759">
+                    <p className="leading-[20px]">Dyson LTD</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:760">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:761">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:762">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:763">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:764">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:765">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:766">
+                          <p className="leading-[28px] mb-0">$8,000 -</p>
+                          <p className="leading-[28px]">$12,000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:767">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:768">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:769">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:770">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:771">
+                          <p className="leading-[28px]">Oct 30, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:772">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:773">
+                  <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Container" data-node-id="134:774">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:775">
+                      <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:776">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon2} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:777">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:778">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-4 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 4" data-node-id="134:779">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:780">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuBj0Vs_OExUUaj_yVU79euXkXsu75Kr7Tjdq85-cUWEPbVQmZo687vXkY2dQFdYUD2F6vSn7RwrkgRk6dyEqFEo2G4oh1BT6_loYIk-BSnuK9rcDY2T6Y0Q-osHodcLrM2MV65FB1ux99b973jHKe9e1OSW3BuK2orkkaI0BustEDutDqvxziQpM5q9XZXuXyGqLG3bGDeg7ILI_GDrprFgsqq8gl-eV0UrDg32KkmN9mlwtlGkmMKvsLXs2fwCh8oldRahFBXZWGs" data-node-id="134:781">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuBj0VsOExUUajYVu79EuXkXsu75Kr7Tjdq85CUwePbVQmZo687VXkY2DQFdYud2F6VSn7RwrkgRk6DyEqFEo2G4Oh1Bt6LoYIkBSnuK9RcDy2T6Y0QOsHodcLrM2Mv65Fb1Ux99B973JHKe9E1Osw3BuK2OrkkaI0BustEDutDqvxziQpM5Q9XzXuXyGqLg3BGDeg7IliGDrprFgsqq8GlEV0UrDg32KkmN9MlwtlGkmMKvsLXs2FwCh8OldRahFbxzwGs} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:782">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:783">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:785">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[75.8px]" data-node-id="134:786">
+                    <p className="leading-[20px]">81% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:787">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:788">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:789">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[83.41px]" data-node-id="134:790">
+                    <p className="leading-[15px]">{`Audio & Tech`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:791">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:792">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:793">
+                    <p className="leading-[30px]">Sony: XM5 Masterclass</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:794">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:795">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[111.7px]" data-node-id="134:797">
+                    <p className="leading-[20px]">Sony Electronics</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:798">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:799">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:800">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:801">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:802">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:803">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:804">
+                          <p className="leading-[28px] mb-0">$4,500 -</p>
+                          <p className="leading-[28px]">$6,500</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:805">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:806">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:807">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:808">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:809">
+                          <p className="leading-[28px]">Nov 05, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:810">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:811">
+                  <div className="content-stretch flex gap-[8px] h-[18px] items-start relative shrink-0" data-name="Container" data-node-id="134:812">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:813">
+                      <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:814">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon2} />
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:815">
+                      <div className="h-[18px] relative shrink-0 w-[12px]" data-name="Icon" data-node-id="134:816">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon4} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:817">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:818">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-5 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 5" data-node-id="134:819">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:820">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuDUf18d-CwBTLzshGzXIsEKtnqUl_5s8rzV6TRvQsPQvGqwxjdgr00CjokZylFm1UXz-0Hy4EBpQ9IbixcSXpUBfGSjvNx-W0YLyv_rdqBYNARLCVmXBwP5gfMPSlbbr_uUsF8z1GZgZHo13E8-TpHpqFVlJr5dQuYj3BR7NiA0zHH6_cZZ7VI9roR9uYuJZ1--Juu_u65i8YjdGrlRX9gusX8I7GBxyCt-aYD2eTFtt4xbBsz86RMIpiAsZwSzIMebnVaNVq3heE4" data-node-id="134:821">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuDUf18DCwBtLzshGzXIsEKtnqUl5S8RzV6TRvQsPQvGqwxjdgr00CjokZylFm1UXz0Hy4EBpQ9IbixcSXpUBfGSjvNxW0YLyvRdqBynarlcVmXBwP5GfMpSlbbrUUsF8Z1GZgZHo13E8TpHpqFVlJr5DQuYj3Br7NiA0ZHh6CZz7Vi9RoR9UYuJz1JuuU65I8YjdGrlRx9GusX8I7GBxyCtAYd2ETFtt4XbBsz86RmIpiAsZwSzIMebnVaNVq3HeE4} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:822">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:823">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:825">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[77.75px]" data-node-id="134:826">
+                    <p className="leading-[20px]">79% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:827">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:828">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:829">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[119.77px]" data-node-id="134:830">
+                    <p className="leading-[15px]">{`Skincare & Health`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:831">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:832">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:833">
+                    <p className="leading-[30px] mb-0">The Ordinary: Science</p>
+                    <p className="leading-[30px]">of Glow</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:834">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:835">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[53.86px]" data-node-id="134:837">
+                    <p className="leading-[20px]">DECIEM</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:838">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:839">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:840">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:841">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:842">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:843">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:844">
+                          <p className="leading-[28px] mb-0">$1,500 -</p>
+                          <p className="leading-[28px]">$3,000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:845">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:846">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:847">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:848">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:849">
+                          <p className="leading-[28px]">Dec 01, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:850">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:851">
+                  <div className="content-stretch flex h-[18px] items-start relative shrink-0" data-name="Container" data-node-id="134:852">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:853">
+                      <div className="h-[18px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:854">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon3} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:855">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:856">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white col-1 content-stretch flex flex-col isolate items-start justify-self-stretch overflow-clip relative rounded-[8px] row-6 self-start shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] shrink-0" data-name="Article - Campaign Card 6" data-node-id="134:857">
+            <div className="content-stretch flex flex-col h-[224px] items-start justify-center relative shrink-0 w-full z-[2]" data-name="Container" data-node-id="134:858">
+              <div className="flex-[1_0_0] min-h-px min-w-px relative w-full" data-name="AB6AXuCLrvXMDUvWqVrqSXqfe72ANTZe9YupJpfM-kXIWMHZ78sBS70JIBz_ins5WfkfNEQNH7iYkzkIoCtzz4LQCRN1lx46VVl4GKv7ytVNKYL9SHiMIAOiyweosUv2mLQDY3-P6f5GxqTG1STNP2trnyS9WYvtpyDF4SCfVXNHEUwZsufXu8v2JIPMdRy2DP8BdtWwPniG9jxXPDdk2jpY2M-ZCkpJTZLKRoDCMskFuk7trk_1VKYwjqwBPlka7Qr66fbrAryYqpHbJoE" data-node-id="134:859">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[152.68%] left-0 max-w-none top-[-26.34%] w-full" src={imgAb6AXuCLrvXmdUvWqVrqSXqfe72AntZe9YupJpfMKXiwmhz78SBs70JiBzIns5WfkfNeqnh7IYkzkIoCtzz4Lqcrn1Lx46VVl4GKv7YtVnkyl9SHiMiaOiyweosUv2MLqdy3P6F5GxqTg1Stnp2TrnyS9WYvtpyDf4SCfVxnheUwZsufXu8V2JipMdRy2Dp8BdtWwPniG9JxXpDdk2JpY2MZCkpJtzlkRoDcMskFuk7Trk1VkYwjqwBPlka7Qr66FbrAryYqpHbJoE} />
+                </div>
+              </div>
+              <div className="absolute backdrop-blur-[6px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[8px] items-center px-[12px] py-[6px] right-[16px] rounded-[4px] top-[16px]" data-name="Overlay+OverlayBlur" data-node-id="134:860">
+                <div className="h-[15px] relative shrink-0 w-[12px]" data-name="Container" data-node-id="134:861">
+                  <img alt="" className="absolute block max-w-none size-full" src={imgContainer5} />
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:863">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[14px] w-[77.45px]" data-node-id="134:864">
+                    <p className="leading-[20px]">74% Match</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start p-[24px] relative shrink-0 w-full z-[1]" data-name="Container" data-node-id="134:865">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:866">
+                <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-name="Paragraph" data-node-id="134:867">
+                  <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[10px] tracking-[1px] uppercase w-[138.66px]" data-node-id="134:868">
+                    <p className="leading-[15px]">{`Automotive & Future`}</p>
+                  </div>
+                  <div className="h-[18px] relative shrink-0 w-[14px]" data-name="Icon" data-node-id="134:869">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3" data-node-id="134:870">
+                  <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[24px] w-full" data-node-id="134:871">
+                    <p className="leading-[30px]">Tesla: Model 3 Refresh</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="134:872">
+                  <div className="h-[14px] relative shrink-0 w-[14.667px]" data-name="Container" data-node-id="134:873">
+                    <img alt="" className="absolute block max-w-none size-full" src={imgContainer6} />
+                  </div>
+                  <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[14px] w-[63.59px]" data-node-id="134:875">
+                    <p className="leading-[20px]">Tesla Inc.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:876">
+                <div className="border-[rgba(235,187,180,0.1)] border-b border-solid border-t gap-x-[16px] gap-y-[16px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_76.50px] py-[17px] relative shrink-0 w-full" data-name="Border" data-node-id="134:877">
+                  <div className="col-1 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:878">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:879">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:880">
+                          <p className="leading-[16.5px]">Budget Range</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:881">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#1a1c1c] text-[18px] w-full" data-node-id="134:882">
+                          <p className="leading-[28px] mb-0">$15,000 -</p>
+                          <p className="leading-[28px]">$25,000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 justify-self-stretch relative row-1 self-start shrink-0" data-name="Container" data-node-id="134:883">
+                    <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[4px] items-start pb-[28px] relative w-full">
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:884">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#603e39] text-[11px] tracking-[-0.55px] uppercase w-full" data-node-id="134:885">
+                          <p className="leading-[16.5px]">Deadline</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container" data-node-id="134:886">
+                        <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#bc0100] text-[18px] w-full" data-node-id="134:887">
+                          <p className="leading-[28px]">Nov 15, 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[24px] relative shrink-0 w-full" data-name="Margin" data-node-id="134:888">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-name="Container" data-node-id="134:889">
+                  <div className="content-stretch flex h-[16px] items-start relative shrink-0" data-name="Container" data-node-id="134:890">
+                    <div className="content-stretch flex flex-col items-start relative self-stretch shrink-0" data-name="Container" data-node-id="134:891">
+                      <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Icon" data-node-id="134:892">
+                        <img alt="" className="absolute block max-w-none size-full" src={imgIcon2} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#bc0100] content-stretch flex flex-col items-center justify-center min-h-[48px] px-[32px] py-[12px] relative rounded-[4px] shrink-0" data-name="Button" data-node-id="134:893">
+                    <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[24px] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white w-[85.44px]" data-node-id="134:894">
+                      <p className="leading-[24px]">Apply Now</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute backdrop-blur-[12px] bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col items-start left-0 shadow-[0px_12px_40px_0px_rgba(26,28,28,0.04)] top-0 w-[390px]" data-name="Header - TopAppBar" data-node-id="134:895">
+        <div className="content-stretch flex h-[64px] items-center max-w-[1280px] px-[24px] relative shrink-0 w-full" data-name="Container" data-node-id="134:896">
+          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-name="Container" data-node-id="134:897">
+            <div className="relative shrink-0 size-[16px]" data-name="Button" data-node-id="134:898">
+              <img alt="" className="absolute block max-w-none size-full" src={imgButton} />
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Heading 1" data-node-id="134:900">
+              <div className="flex flex-col font-['Be_Vietnam_Pro:Black',sans-serif] h-[32px] justify-center leading-[0] not-italic relative shrink-0 text-[#b91c1c] text-[24px] tracking-[-1.2px] w-[138.61px]" data-node-id="134:901">
+                <p className="leading-[32px]">Creator Box</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute backdrop-blur-[12px] bg-[rgba(255,255,255,0.8)] bottom-0 content-stretch flex gap-[15.5px] h-[80px] items-center left-0 pl-[23.77px] pr-[23.81px] shadow-[0px_-12px_40px_0px_rgba(26,28,28,0.04)] w-[390px]" data-name="BottomNavBar (Visible on mobile)" data-node-id="134:902">
+        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Container" data-node-id="134:903">
+          <div className="h-[18px] relative shrink-0 w-[16px]" data-name="Container" data-node-id="134:904">
+            <img alt="" className="absolute block max-w-none size-full" src={imgContainer7} />
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:906">
+            <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#9ca3af] text-[10px] tracking-[1px] uppercase w-[34.42px]" data-node-id="134:907">
+              <p className="leading-[15px]">Home</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[rgba(254,242,242,0.5)] content-stretch flex flex-col items-center justify-center px-[12px] py-[4px] relative rounded-[4px] shrink-0" data-name="Overlay" data-node-id="134:908">
+          <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Container" data-node-id="134:909">
+            <img alt="" className="absolute block max-w-none size-full" src={imgContainer8} />
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:911">
+            <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#b91c1c] text-[10px] tracking-[1px] uppercase w-[69.91px]" data-node-id="134:912">
+              <p className="leading-[15px]">Campaigns</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Container" data-node-id="134:913">
+          <div className="h-[16px] relative shrink-0 w-[20px]" data-name="Container" data-node-id="134:914">
+            <img alt="" className="absolute block max-w-none size-full" src={imgContainer9} />
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:916">
+            <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#9ca3af] text-[10px] tracking-[1px] uppercase w-[44.08px]" data-node-id="134:917">
+              <p className="leading-[15px]">Studio</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Container" data-node-id="134:918">
+          <div className="h-[16px] relative shrink-0 w-[22px]" data-name="Container" data-node-id="134:919">
+            <img alt="" className="absolute block max-w-none size-full" src={imgContainer10} />
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:921">
+            <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#9ca3af] text-[10px] tracking-[1px] uppercase w-[59.81px]" data-node-id="134:922">
+              <p className="leading-[15px]">Earnings</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0" data-name="Container" data-node-id="134:923">
+          <div className="relative shrink-0 size-[16px]" data-name="Container" data-node-id="134:924">
+            <img alt="" className="absolute block max-w-none size-full" src={imgContainer11} />
+          </div>
+          <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container" data-node-id="134:926">
+            <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[15px] justify-center leading-[0] not-italic relative shrink-0 text-[#9ca3af] text-[10px] tracking-[1px] uppercase w-[48.02px]" data-node-id="134:927">
+              <p className="leading-[15px]">Profile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Image assets should be read from disk. Images and SVGs will be stored as constants, e.g. const image = 'd:\Quadrant_Projects\creator_box_mobile\assets/10c13ac1a228a365cb98a0064b1d5afbc84887b2.png' These constants will be used in the code as the source for the image, e.g. <img src={image} /> This is true for both images and SVGs, so you can use the same approach for both types of assets.
+IMPORTANT: After you call this tool, you MUST call get_screenshot to get a screenshot of the node for context.
