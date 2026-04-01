@@ -17,11 +17,12 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
   String _selectedCategory = 'All';
   final List<String> _categories = [
     'All',
-    'Shorts',
-    'Trending',
-    'Gaming',
-    'Tech',
-    'Music',
+    'Strategy',
+    'Editing',
+    'Growth',
+    'Monetization',
+    'Equipment',
+    'Scripting',
   ];
 
   @override
@@ -33,82 +34,61 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
     }
 
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        toolbarHeight: 0, // We'll build a custom header in the body
-      ),
+      backgroundColor: const Color(0xFFF9F9F9),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Custom Header
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 16,
+                ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      width: 44,
-                      height: 44,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.grayBorder, width: 1.5),
-                        image: const DecorationImage(
-                          image: AssetImage('assets/profile_placeholder.png'),
-                          fit: BoxFit.cover,
+                    Row(
+                      children: [
+                        IconButton(
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          icon: const Icon(
+                            Icons.menu,
+                            color: Color(0xFF1A1C1C),
+                            size: 24,
+                          ),
+                          onPressed: () {},
                         ),
-                      ),
+                        const SizedBox(width: 16),
+                        Text(
+                          'Video Hub',
+                          style: AppTypography.interBold.copyWith(
+                            color: AppColors.primaryRed,
+                            fontSize: 24,
+                            letterSpacing: -0.6,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 16),
-                    Text(
-                      'VIDEO HUB',
-                      style: AppTypography.interBold.copyWith(
-                        color: AppColors.textMain,
-                        fontSize: 24,
-                        letterSpacing: -0.5,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                    const Spacer(),
                     IconButton(
-                      icon: const Icon(Icons.notifications_none, color: AppColors.textMain, size: 28),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                      icon: const Icon(
+                        Icons.search,
+                        color: Color(0xFF1A1C1C),
+                        size: 24,
+                      ),
                       onPressed: () {},
                     ),
                   ],
                 ),
               ),
 
-              // Search Bar
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-                child: Container(
-                  height: 52,
-                  decoration: BoxDecoration(
-                    color: AppColors.searchBackground,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Search for creative ideas...',
-                      hintStyle: AppTypography.interMedium.copyWith(
-                        color: AppColors.hintText,
-                        fontSize: 14,
-                      ),
-                      prefixIcon: const Icon(
-                        Icons.search,
-                        color: AppColors.hintText,
-                        size: 22,
-                      ),
-                      border: InputBorder.none,
-                      contentPadding: const EdgeInsets.symmetric(vertical: 16),
-                    ),
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 24),
+              const SizedBox(height: 16),
 
               // Categories
               SingleChildScrollView(
@@ -125,34 +105,122 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
                 ),
               ),
 
+              const SizedBox(height: 24),
+
+              // Hero Section
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: HeroVideoCard(
+                  title: 'space using three-point lighting techniques.',
+                  thumbnailPath: 'assets/cinematography_hero.png',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LandscapePlayerScreen(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+
               const SizedBox(height: 32),
 
-              // Collections Section
+              // Recent Masterclasses Section
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Recent\nMasterclasses',
+                      style: AppTypography.beVietnamProBlack.copyWith(
+                        color: const Color(0xFF1A1C1C),
+                        fontSize: 30,
+                        height: 1.2,
+                        letterSpacing: -0.75,
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: Row(
+                          children: [
+                            Text(
+                              'View\nAll',
+                              textAlign: TextAlign.right,
+                              style: AppTypography.interBold.copyWith(
+                                color: const Color(0xFFBC0100),
+                                fontSize: 14,
+                                height: 1.2,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            const Icon(
+                              Icons.chevron_right,
+                              color: Color(0xFFBC0100),
+                              size: 16,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 24),
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'COLLECTIONS FOR YOU',
-                      style: AppTypography.interBold.copyWith(
-                        color: AppColors.textMain,
-                        fontSize: 12,
-                        letterSpacing: 1.2,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    VideoHeroCard(
-                      title: 'CINEMATOGRAPHY FOR BEGINNERS MASTERCLASS',
-                      thumbnailPath: 'assets/cinematography_hero.png',
-                      duration: '15:20',
-                      views: '45K VIEWS',
-                      timeAgo: '2 DAYS AGO',
+                    MasterclassCard(
+                      title: 'The Hidden Psychology of Color Grading in Narrative Film',
+                      thumbnailPath: 'assets/short_thumb_1.png', // Mock image
+                      duration: '14:20',
+                      views: '124K views',
+                      timeAgo: '2 days ago',
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const VideoAnalysisScreen()),
+                          MaterialPageRoute(
+                            builder: (context) => const VideoAnalysisScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 32),
+                    MasterclassCard(
+                      title: 'Speed Up Your Workflow: 10 DaVinci Resolve Hacks',
+                      thumbnailPath: 'assets/landscape_cinematic_bg.png', // Mock image
+                      duration: '08:45',
+                      views: '89K views',
+                      timeAgo: '5 days ago',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const VideoAnalysisScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 32),
+                    MasterclassCard(
+                      title: 'Sound Design Basics: How to Audio-Mix for Social Media',
+                      thumbnailPath: 'assets/cinematography_hero.png', // Mock image
+                      duration: '21:10',
+                      views: '56K views',
+                      timeAgo: '1 week ago',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const VideoAnalysisScreen(),
+                          ),
                         );
                       },
                     ),
@@ -160,22 +228,37 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
                 ),
               ),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: 48),
 
-              // Trending Section
+              // Shorts Section
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
-                child: Text(
-                  'VIDEO TRENDS',
-                  style: AppTypography.interBold.copyWith(
-                    color: AppColors.textMain,
-                    fontSize: 12,
-                    letterSpacing: 1.2,
-                    fontWeight: FontWeight.w900,
-                  ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.bolt,
+                      color: AppColors.primaryRed,
+                      size: 32,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        'Quick Insights\n(Shorts)',
+                        style: AppTypography.beVietnamProBlack.copyWith(
+                          color: const Color(0xFF1A1C1C),
+                          fontSize: 30,
+                          height: 1.2,
+                          letterSpacing: -0.75,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(height: 20),
+
+              const SizedBox(height: 24),
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: GridView.count(
@@ -184,56 +267,65 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
                   crossAxisCount: 2,
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,
-                  childAspectRatio: 156 / 210,
+                  childAspectRatio: 0.6, // Aspect ratio approx 167/289
                   children: [
-                    VideoTrendingCard(
-                      title: 'VISUAL STORYTELLING HACKS',
-                      views: '840K VIEWS',
-                      thumbnailPath: 'assets/shorts_immersive_bg.png', // Reusing background as thumb
+                    ShortCard(
+                      title: 'Thumbnail Secret Revealed!',
+                      views: '1.2M views',
+                      thumbnailPath: 'assets/short_thumb_1.png', // Mock image
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const ShortsPlayerScreen()),
+                          MaterialPageRoute(
+                            builder: (context) => const ShortsPlayerScreen(),
+                          ),
                         );
                       },
                     ),
-                    VideoTrendingCard(
-                      title: 'AI EVOLUTION BREAKDOWN',
-                      views: '85K VIEWS',
-                      thumbnailPath: 'assets/landscape_cinematic_bg.png',
+                    ShortCard(
+                      title: 'Stop using generic intros!',
+                      views: '840K views',
+                      thumbnailPath: 'assets/short_thumb_2.png', // Mock image
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const LandscapePlayerScreen()),
+                          MaterialPageRoute(
+                            builder: (context) => const ShortsPlayerScreen(),
+                          ),
                         );
                       },
                     ),
-                    VideoTrendingCard(
-                      title: 'COLOR GRADE MASTERCLASS',
-                      views: '64K VIEWS',
-                      thumbnailPath: 'assets/short_thumb_1.png',
+                    ShortCard(
+                      title: 'The 3-second hook rule',
+                      views: '2.5M views',
+                      thumbnailPath: 'assets/shorts_immersive_bg.png', // Mock image
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const VideoAnalysisScreen()),
+                          MaterialPageRoute(
+                            builder: (context) => const ShortsPlayerScreen(),
+                          ),
                         );
                       },
                     ),
-                    VideoTrendingCard(
-                      title: 'LIGHTING SETUP SECRETS',
-                      views: '150K VIEWS',
-                      thumbnailPath: 'assets/short_thumb_2.png',
+                    ShortCard(
+                      title: 'My Desk Setup for 2024',
+                      views: '310K views',
+                      thumbnailPath: 'assets/landscape_cinematic_bg.png', // Mock image
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const VideoAnalysisScreen()),
+                          MaterialPageRoute(
+                            builder: (context) => const ShortsPlayerScreen(),
+                          ),
                         );
                       },
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 40),
+
+              const SizedBox(height: 48), // Bottom padding for navbar
             ],
           ),
         ),

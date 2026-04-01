@@ -21,18 +21,109 @@ class CategoryChip extends StatelessWidget {
         margin: const EdgeInsets.only(right: 12),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         decoration: BoxDecoration(
-          color: isSelected ? AppColors.primaryRed : const Color(0xFFF3F3F3),
-          borderRadius: BorderRadius.circular(24),
-          border: Border.all(
-            color: isSelected ? AppColors.primaryRed : Colors.transparent,
-            width: 1,
-          ),
+          color: isSelected ? AppColors.primaryRed : const Color(0xFFE8E8E8),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Text(
           label,
-          style: AppTypography.interSemiBold.copyWith(
-            color: isSelected ? Colors.white : AppColors.hintText,
-            fontSize: 13,
+          style: isSelected 
+              ? AppTypography.interSemiBold.copyWith(
+                  color: Colors.white,
+                  fontSize: 14,
+                )
+              : AppTypography.interMedium.copyWith(
+                  color: const Color(0xFF1A1C1C),
+                  fontSize: 14,
+                ),
+        ),
+      ),
+    );
+  }
+}
+
+class HeroVideoCard extends StatelessWidget {
+  final String title;
+  final String thumbnailPath;
+  final VoidCallback onTap;
+
+  const HeroVideoCard({
+    super.key,
+    required this.title,
+    required this.thumbnailPath,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AspectRatio(
+        aspectRatio: 21 / 9,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(4),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              Image.asset(
+                thumbnailPath,
+                fit: BoxFit.cover,
+                alignment: const Alignment(0, -0.2),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.transparent,
+                      Colors.black.withValues(alpha: 0.2),
+                      Colors.black.withValues(alpha: 0.8),
+                    ],
+                    stops: const [0.0, 0.5, 1.0],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        title,
+                        style: AppTypography.interRegular.copyWith(
+                          color: Colors.white.withValues(alpha: 0.8),
+                          fontSize: 16,
+                          height: 1.5,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.play_arrow, color: Color(0xFF1A1C1C), size: 16),
+                          const SizedBox(width: 6),
+                          Text(
+                            'Watch Now',
+                            style: AppTypography.interBold.copyWith(
+                              color: const Color(0xFF1A1C1C),
+                              fontSize: 14,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
@@ -40,7 +131,7 @@ class CategoryChip extends StatelessWidget {
   }
 }
 
-class VideoHeroCard extends StatelessWidget {
+class MasterclassCard extends StatelessWidget {
   final String title;
   final String thumbnailPath;
   final String duration;
@@ -48,7 +139,7 @@ class VideoHeroCard extends StatelessWidget {
   final String timeAgo;
   final VoidCallback onTap;
 
-  const VideoHeroCard({
+  const MasterclassCard({
     super.key,
     required this.title,
     required this.thumbnailPath,
@@ -71,50 +162,22 @@ class VideoHeroCard extends StatelessWidget {
               AspectRatio(
                 aspectRatio: 16 / 9,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
-                  child: Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      Image.asset(
-                        thumbnailPath,
-                        fit: BoxFit.cover,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Colors.transparent,
-                              AppColors.cardGradientEnd.withValues(alpha: 0.6),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
+                  borderRadius: BorderRadius.circular(4),
+                  child: Image.asset(
+                    thumbnailPath,
+                    fit: BoxFit.cover,
                   ),
                 ),
-              ),
-              // Play Button
-              Container(
-                width: 56,
-                height: 56,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.2),
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.4), width: 1.5),
-                ),
-                child: const Icon(Icons.play_arrow, color: Colors.white, size: 32),
               ),
               // Duration Tag
               Positioned(
                 bottom: 12,
                 right: 12,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: Colors.black.withValues(alpha: 0.7),
-                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.black.withValues(alpha: 0.8),
+                    borderRadius: BorderRadius.circular(2),
                   ),
                   child: Text(
                     duration,
@@ -132,28 +195,31 @@ class VideoHeroCard extends StatelessWidget {
         Text(
           title,
           style: AppTypography.interBold.copyWith(
-            color: AppColors.textMain,
+            color: const Color(0xFF1A1C1C),
             fontSize: 20,
-            height: 1.2,
+            height: 1.375,
+            letterSpacing: -0.2,
           ),
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 8),
         Row(
           children: [
             Text(
               views,
               style: AppTypography.interMedium.copyWith(
-                color: AppColors.hintText,
+                color: const Color(0xFF603E39),
                 fontSize: 12,
               ),
             ),
             const SizedBox(width: 8),
-            Container(width: 4, height: 4, decoration: const BoxDecoration(color: Color(0xFFD1D5DB), shape: BoxShape.circle)),
+            Container(width: 4, height: 4, decoration: const BoxDecoration(color: Color(0xFF956D67), shape: BoxShape.circle)),
             const SizedBox(width: 8),
             Text(
               timeAgo,
               style: AppTypography.interMedium.copyWith(
-                color: AppColors.hintText,
+                color: const Color(0xFF603E39),
                 fontSize: 12,
               ),
             ),
@@ -165,18 +231,18 @@ class VideoHeroCard extends StatelessWidget {
           onTap: onTap,
           child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 14),
+            padding: const EdgeInsets.symmetric(vertical: 10),
             decoration: BoxDecoration(
-              color: const Color(0xFFF3F3F3),
+              color: const Color(0xFFE8E8E8),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Center(
               child: Text(
                 'APPLY THIS IDEA',
                 style: AppTypography.interBold.copyWith(
-                  color: AppColors.primaryRed,
+                  color: const Color(0xFFB91C1C),
                   fontSize: 12,
-                  letterSpacing: 1,
+                  letterSpacing: 1.2,
                 ),
               ),
             ),
@@ -187,13 +253,13 @@ class VideoHeroCard extends StatelessWidget {
   }
 }
 
-class VideoTrendingCard extends StatelessWidget {
+class ShortCard extends StatelessWidget {
   final String title;
   final String views;
   final String thumbnailPath;
   final VoidCallback onTap;
 
-  const VideoTrendingCard({
+  const ShortCard({
     super.key,
     required this.title,
     required this.views,
@@ -207,14 +273,7 @@ class VideoTrendingCard extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.05),
-              blurRadius: 10,
-              offset: const Offset(0, 4),
-            ),
-          ],
+          borderRadius: BorderRadius.circular(4),
         ),
         clipBehavior: Clip.antiAlias,
         child: Stack(
@@ -231,14 +290,14 @@ class VideoTrendingCard extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    AppColors.cardGradientEnd.withValues(alpha: 0.8),
+                    Colors.black.withValues(alpha: 0.7),
                   ],
-                  stops: const [0.5, 1.0],
+                  stops: const [0.3, 1.0],
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -250,7 +309,7 @@ class VideoTrendingCard extends StatelessWidget {
                     style: AppTypography.interBold.copyWith(
                       color: Colors.white,
                       fontSize: 14,
-                      height: 1.2,
+                      height: 1.25,
                     ),
                   ),
                   const SizedBox(height: 4),
