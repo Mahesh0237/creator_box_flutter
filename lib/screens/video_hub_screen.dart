@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/video_hub_widgets.dart';
+import '../widgets/shared_app_bar.dart';
 import 'creators_screen.dart';
 import 'video_analysis_screen.dart';
 import 'shorts_player_screen.dart';
@@ -35,59 +36,12 @@ class _VideoHubScreenState extends State<VideoHubScreen> {
 
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
+      appBar: const SharedAppBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Custom Header
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 16,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        IconButton(
-                          padding: EdgeInsets.zero,
-                          constraints: const BoxConstraints(),
-                          icon: const Icon(
-                            Icons.menu,
-                            color: Color(0xFF1A1C1C),
-                            size: 24,
-                          ),
-                          onPressed: () {},
-                        ),
-                        const SizedBox(width: 16),
-                        Text(
-                          'Video Hub',
-                          style: AppTypography.interBold.copyWith(
-                            color: AppColors.primaryRed,
-                            fontSize: 24,
-                            letterSpacing: -0.6,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                      ],
-                    ),
-                    IconButton(
-                      padding: EdgeInsets.zero,
-                      constraints: const BoxConstraints(),
-                      icon: const Icon(
-                        Icons.search,
-                        color: Color(0xFF1A1C1C),
-                        size: 24,
-                      ),
-                      onPressed: () {},
-                    ),
-                  ],
-                ),
-              ),
-
               const SizedBox(height: 16),
 
               // Categories

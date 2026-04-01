@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import '../theme.dart';
+import '../widgets/shared_app_bar.dart';
 
 class CampaignsScreen extends StatefulWidget {
   const CampaignsScreen({super.key});
@@ -73,23 +74,7 @@ class _CampaignsScreenState extends State<CampaignsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.primaryRed),
-          onPressed: () {},
-        ),
-        title: Text(
-          'Creator Box',
-          style: AppTypography.beVietnamProBlack.copyWith(
-            color: AppColors.primaryRed,
-            fontSize: 24,
-            letterSpacing: -1.2,
-          ),
-        ),
-        titleSpacing: 0,
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
+      appBar: const SharedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 32.0),

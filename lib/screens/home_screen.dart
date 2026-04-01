@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/home_widgets.dart';
 import '../theme.dart';
+import '../widgets/shared_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,44 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFBFBFB),
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        toolbarHeight: 80,
-        title: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Row(
-            children: [
-              Container(
-                width: 36,
-                height: 36,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    image: AssetImage('assets/profile_placeholder.png'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
-              Image.asset('assets/Creator-Box-logo.png', height: 40),
-              const Expanded(child: SizedBox()),
-              IconButton(
-                icon: const Icon(
-                  Icons.notifications_none,
-                  color: AppColors.textMain,
-                ),
-                onPressed: () {},
-              ),
-              const SizedBox(width: 8),
-              IconButton(
-                icon: const Icon(Icons.search, color: AppColors.textMain),
-                onPressed: () {},
-              ),
-            ],
-          ),
-        ),
-      ),
+      appBar: const SharedAppBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

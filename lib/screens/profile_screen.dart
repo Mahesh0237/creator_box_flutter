@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
+import '../widgets/shared_app_bar.dart';
 import 'my_campaigns_screen.dart';
 import 'my_stats_screen.dart';
 import 'edit_profile_screen.dart';
@@ -12,47 +13,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.menu, color: AppColors.textMain),
-          onPressed: () {},
-        ),
-        title: Text(
-          'CREATOR BOX',
-          style: AppTypography.beVietnamProBlack.copyWith(
-            color: AppColors.primaryRed,
-            fontSize: 24,
-            fontStyle: FontStyle.italic,
-            letterSpacing: -1.2,
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: const Color(0xFFE8E8E8),
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(
-                  color: const Color(0xFFEBBBB4).withValues(alpha: 0.15),
-                ),
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: Image.asset(
-                  'assets/user_avatar_small.png',
-                  width: 32,
-                  height: 32,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
+      appBar: const SharedAppBar(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
         child: Column(
